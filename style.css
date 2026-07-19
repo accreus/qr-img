@@ -277,6 +277,51 @@ footer p {
     color: var(--text-muted);
 }
 
+/* Ramesh View */
+.ramesh-view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 24px;
+}
+
+.ramesh-view.hidden {
+    display: none;
+}
+
+.ramesh-content {
+    text-align: center;
+    padding: 32px 0;
+}
+
+.ramesh-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
+    margin-bottom: 32px;
+    line-height: 1.4;
+}
+
+.ramesh-qr-wrapper {
+    display: inline-block;
+    padding: 20px;
+    background: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+#ramesh-qr-canvas {
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+
+.ramesh-nav {
+    margin-top: 28px;
+}
+
 /* Responsive */
 @media (max-width: 480px) {
     body {

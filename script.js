@@ -1,5 +1,28 @@
 import QRCode from 'qrcode';
 
+// ---- Client-side routing ----
+const path = window.location.pathname.replace(/\/+$/, ''); // remove trailing slash
+
+if (path === '/ramesh') {
+    // Show ramesh view
+    document.getElementById('ramesh-view').classList.remove('hidden');
+    document.querySelector('.container:not(.ramesh-container)')?.classList.add('hidden');
+
+    // Generate QR code for the ramesh text
+    const rameshText = 'Bazinga by Ramesh the lab technician';
+    const rameshCanvas = document.getElementById('ramesh-qr-canvas');
+
+    QRCode.toCanvas(rameshCanvas, rameshText, {
+        width: 200,
+        margin: 2,
+        color: {
+            dark: '#000000',
+            light: '#ffffff'
+        },
+        errorCorrectionLevel: 'M'
+    });
+}
+
 // DOM Elements
 const urlInput = document.getElementById('url-input');
 const clearBtn = document.getElementById('clear-btn');

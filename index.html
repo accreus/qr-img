@@ -87,4 +87,44 @@
 
     <script type="module" src="/script.js"></script>
 </body>
+
+<!-- Ramesh View (shown when route is /ramesh) -->
+<div id="ramesh-view" class="ramesh-view hidden">
+    <div class="container ramesh-container">
+        <header>
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="3" width="7" height="7"></rect>
+                    <rect x="3" y="14" width="7" height="7"></rect>
+                    <rect x="14" y="14" width="7" height="7"></rect>
+                </svg>
+                <h1>Ramesh</h1>
+            </div>
+        </header>
+
+        <main>
+            <div class="ramesh-content">
+                <p class="ramesh-text">Bazinga by Ramesh the lab technician</p>
+                <div class="qr-wrapper ramesh-qr-wrapper">
+                    <canvas id="ramesh-qr-canvas"></canvas>
+                </div>
+            </div>
+
+            <div class="ramesh-nav">
+                <a href="/" class="generate-btn" style="text-decoration: none;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                    Back to Generator
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <p>No data stored • Generated instantly in your browser</p>
+        </footer>
+    </div>
+</div>
 </html>
